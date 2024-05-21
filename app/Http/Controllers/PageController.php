@@ -7,11 +7,11 @@ use App\Models\Movie;
 
 class PageController extends Controller
 {
-    function index() {
-        $movie = Movie::all();
+    public function index() {
+        $movies = Movie::all();
 
         $data = [
-            'movie' => $movie
+            'movies' => $movies
         ];
         
         return view('home', $data);
