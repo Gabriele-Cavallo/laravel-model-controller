@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>ciao sono la home</h1>
+    @foreach ($movie as $movie)
+        <h1>ciao sono un film</h1>
+    @endforeach
 @endsection
